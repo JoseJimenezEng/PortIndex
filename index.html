@@ -27,13 +27,17 @@
         <nav class="nav">
             <a href="#" class="logo"><span class="logo-bracket">&lt;</span>Jose Jimenez<span class="logo-bracket">/&gt;</span></a>
             <ul class="nav-links">
-                <li><a href="#about">Info</a></li>
-                <li><a href="#skills">Stack</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#studies">Estudios</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about" data-i18n="nav.about">Info</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Stack</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+                <li><a href="#studies" data-i18n="nav.studies">Estudios</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
             </ul>
+            <div class="lang-toggle" id="langToggle">
+                <button type="button" class="lang-btn active" data-lang="es">ES</button>
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+            </div>
         </nav>
     </header>
 
@@ -42,12 +46,12 @@
         <div id="particles-js"></div>
         <div class="hero-content">
             <span class="hero-tag" data-aos="fade-down">AI DEVELOPER · SYSTEMS ENGINEER</span>
-            <h1>Automatización e IA</h1>
-            <p>Diseño agentes de IA, flujos agénticos y automatizaciones de negocio que reducen costos operativos y
+            <h1 data-i18n="hero.title">Automatización e IA</h1>
+            <p data-i18n="hero.desc">Diseño agentes de IA, flujos agénticos y automatizaciones de negocio que reducen costos operativos y
                 elevan la experiencia del cliente.</p>
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="0.6">
-                <a href="#projects" class="cta-button">Ver Proyectos</a>
-                <a href="#contact" class="cta-outline">Contáctame</a>
+                <a href="#projects" class="cta-button" data-i18n="hero.cta1">Ver Proyectos</a>
+                <a href="#contact" class="cta-outline" data-i18n="hero.cta2">Contáctame</a>
             </div>
         </div>
         <div class="scroll-hint">
@@ -57,9 +61,9 @@
 
     <!-- About Section -->
     <section id="about" class="section">
-        <span class="section-eyebrow" data-aos="fade-up">Perfil</span>
-        <h2 data-aos="fade-up">Información</h2>
-        <p class="section-intro" data-aos="fade-up" data-aos-delay="50">
+        <span class="section-eyebrow" data-aos="fade-up" data-i18n="about.eyebrow">Perfil</span>
+        <h2 data-aos="fade-up" data-i18n="about.title">Información</h2>
+        <p class="section-intro" data-aos="fade-up" data-aos-delay="50" data-i18n="about.intro">
             AI Developer y Systems Engineer especializado en workflows impulsados por IA, flujos agénticos y
             automatización de procesos de negocio. Experto en optimizar operaciones, reducir costos y mejorar la
             experiencia del cliente mediante soluciones tecnológicas inteligentes.
@@ -67,20 +71,20 @@
         <div class="about-grid">
             <div class="about-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-robot"></i>
-                <h3>Inteligencia Artificial</h3>
-                <p>Desarrollo agentes de IA conversacionales para atención al cliente, agendamiento de citas y
+                <h3 data-i18n="about.card1.title">Inteligencia Artificial</h3>
+                <p data-i18n="about.card1.desc">Desarrollo agentes de IA conversacionales para atención al cliente, agendamiento de citas y
                     automatización de procesos empresariales.</p>
             </div>
             <div class="about-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-cogs"></i>
-                <h3>Automatización</h3>
-                <p>Automatizo procesos repetitivos y complejos para mejorar la eficiencia operativa y reducir costos
+                <h3 data-i18n="about.card2.title">Automatización</h3>
+                <p data-i18n="about.card2.desc">Automatizo procesos repetitivos y complejos para mejorar la eficiencia operativa y reducir costos
                     empresariales.</p>
             </div>
             <div class="about-card" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-chart-line"></i>
-                <h3>Optimización</h3>
-                <p>Implemento soluciones que optimizan workflows, mejoran la experiencia del cliente y aumentan la
+                <h3 data-i18n="about.card3.title">Optimización</h3>
+                <p data-i18n="about.card3.desc">Implemento soluciones que optimizan workflows, mejoran la experiencia del cliente y aumentan la
                     productividad.</p>
             </div>
         </div>
@@ -88,13 +92,13 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <span class="section-eyebrow" data-aos="fade-up">Stack</span>
-        <h2 data-aos="fade-up">Habilidades Técnicas</h2>
+        <span class="section-eyebrow" data-aos="fade-up" data-i18n="skills.eyebrow">Stack</span>
+        <h2 data-aos="fade-up" data-i18n="skills.title">Habilidades Técnicas</h2>
         <div class="skills-grid">
             <div class="skills-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="skills-card-header">
                     <i class="fas fa-microchip"></i>
-                    <h3>Automatización con IA</h3>
+                    <h3 data-i18n="skills.card1.title">Automatización con IA</h3>
                 </div>
                 <div class="tag-list">
                     <span class="tag">Make (Integromat)</span>
@@ -111,7 +115,7 @@
             <div class="skills-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="skills-card-header">
                     <i class="fas fa-code"></i>
-                    <h3>Programación & Web</h3>
+                    <h3 data-i18n="skills.card2.title">Programación & Web</h3>
                 </div>
                 <div class="tag-list">
                     <span class="tag">React.js</span>
@@ -130,15 +134,15 @@
 
     <!-- Experience Section -->
     <section id="experience" class="section">
-        <span class="section-eyebrow" data-aos="fade-up">Trayectoria</span>
-        <h2 data-aos="fade-up">Experiencia Laboral</h2>
+        <span class="section-eyebrow" data-aos="fade-up" data-i18n="experience.eyebrow">Trayectoria</span>
+        <h2 data-aos="fade-up" data-i18n="experience.title">Experiencia Laboral</h2>
         <div class="timeline">
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="timeline-date">Junio 2025 — Mayo 2026</span>
+                    <span class="timeline-date" data-i18n="exp1.date">Junio 2025 — Mayo 2026</span>
                     <h3>Automation Engineer <span class="timeline-company">· Feedbird</span></h3>
-                    <p>Diseño y desarrollo de un sistema de QA con IA para revisar posts de redes sociales, diseños
+                    <p data-i18n="exp1.desc">Diseño y desarrollo de un sistema de QA con IA para revisar posts de redes sociales, diseños
                         de email y contenido SEO. Construcción y documentación de workflows automatizados, además de
                         proyectos como un gestor de CVs y contratación, sistemas de respuesta automatizada
                         contextual y un generador de posts para redes sociales.</p>
@@ -147,9 +151,9 @@
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="timeline-date">Febrero 2025 — Mayo 2025</span>
+                    <span class="timeline-date" data-i18n="exp2.date">Febrero 2025 — Mayo 2025</span>
                     <h3>Automation Engineer <span class="timeline-company">· Nexus AI</span></h3>
-                    <p>Desarrollo de proyectos para múltiples clientes enfocados en chatbots y agentes de IA
+                    <p data-i18n="exp2.desc">Desarrollo de proyectos para múltiples clientes enfocados en chatbots y agentes de IA
                         conversacionales por llamada telefónica. Implementación de soluciones de automatización
                         integrando Twilio, ElevenLabs, Make y OpenAI para mejorar la eficiencia operativa y el
                         servicio al cliente.</p>
@@ -158,9 +162,9 @@
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="timeline-date">Enero 2024 — Junio 2024</span>
-                    <h3>Web Developer <span class="timeline-company">· Green Apples Nutrition</span></h3>
-                    <p>Diseño e implementación de plantillas en WordPress y JavaScript, garantizando el cumplimiento
+                    <span class="timeline-date" data-i18n="exp3.date">Enero 2024 — Junio 2024</span>
+                    <h3 data-i18n="exp3.role">Web Developer <span class="timeline-company">· Green Apples Nutrition</span></h3>
+                    <p data-i18n="exp3.desc">Diseño e implementación de plantillas en WordPress y JavaScript, garantizando el cumplimiento
                         de políticas de privacidad y datos. Uso de tecnologías CMS y estrategias SEO para cumplir
                         con los requisitos funcionales y estéticos del cliente.</p>
                 </div>
@@ -170,25 +174,25 @@
 
     <!-- Studies Section -->
     <section id="studies" class="section">
-        <span class="section-eyebrow" data-aos="fade-up">Formación</span>
-        <h2 data-aos="fade-up">Estudios y Certificaciones</h2>
+        <span class="section-eyebrow" data-aos="fade-up" data-i18n="studies.eyebrow">Formación</span>
+        <h2 data-aos="fade-up" data-i18n="studies.title">Estudios y Certificaciones</h2>
         <div class="about-grid">
             <div class="about-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-graduation-cap"></i>
-                <h3>Ingeniería en Sistemas (2020 - 2026)</h3>
-                <p>Universidad Nacional Abierta y a Distancia — Santa Marta, Magdalena. Formación sólida en
+                <h3 data-i18n="edu1.title">Ingeniería en Sistemas (2020 - 2026)</h3>
+                <p data-i18n="edu1.desc">Universidad Nacional Abierta y a Distancia — Santa Marta, Magdalena. Formación sólida en
                     desarrollo de software, arquitectura de sistemas y metodologías ágiles.</p>
             </div>
             <div class="about-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-laptop-code"></i>
-                <h3>Desarrollo Web (2022 - 2023)</h3>
-                <p>Academlo (Online). Certificaciones en desarrollo web backend y frontend, manejo e integración de
+                <h3 data-i18n="edu2.title">Desarrollo Web (2022 - 2023)</h3>
+                <p data-i18n="edu2.desc">Academlo (Online). Certificaciones en desarrollo web backend y frontend, manejo e integración de
                     APIs y bases de datos.</p>
             </div>
             <div class="about-card" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-brain"></i>
-                <h3>Python, IA y Seguridad en la Industria</h3>
-                <p>Certificación en aplicación de la programación e IA con Python en entornos industriales.</p>
+                <h3 data-i18n="edu3.title">Python, IA y Seguridad en la Industria</h3>
+                <p data-i18n="edu3.desc">Certificación en aplicación de la programación e IA con Python en entornos industriales.</p>
             </div>
         </div>
         <div class="cert-list" data-aos="fade-up" data-aos-delay="400">
@@ -201,8 +205,8 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <span class="section-eyebrow" data-aos="fade-up">Portafolio</span>
-        <h2 data-aos="fade-up">Proyectos</h2>
+        <span class="section-eyebrow" data-aos="fade-up" data-i18n="projects.eyebrow">Portafolio</span>
+        <h2 data-aos="fade-up" data-i18n="projects.title">Proyectos</h2>
         <div class="projects-grid">
 
             <!-- Proyecto: QA AI Automation -->
@@ -211,15 +215,17 @@
                     <i class="fas fa-clipboard-check"></i>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">QA AI Automation para Posts de Redes Sociales</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj1.title">QA AI Automation para Posts de Redes Sociales</h3>
+                    <p class="project-description" data-i18n="proj1.desc">
                         Sistema totalmente automatizado con 9 workflows en Make que obtiene los posts de un cliente,
                         los revisa siguiendo el brief, agrupa ideas y mensajes SPP para enviarlos a QA. Una vez
                         aplicadas las correcciones por el Content Creator, la IA verifica que los cambios solicitados
                         se hayan implementado correctamente.
                     </p>
                     <div class="project-links">
-                        <span class="project-link tag-link"><i class="fas fa-bolt"></i> Make · OpenAI</span>
+                        <a href="https://www.loom.com/share/83d82dae59514f60acfdca9b6c48a98f" class="project-link video-link">
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -230,14 +236,16 @@
                     <i class="fas fa-pen-nib"></i>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Adenai — Generador de Posts Editable</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj2.title">Adenai — Generador de Posts Editable</h3>
+                    <p class="project-description" data-i18n="proj2.desc">
                         Aplicación propia para generar posts de redes sociales usando un modelo de IA entrenado a
                         medida, con un framework agéntico basado en generación de código de plantillas editables
                         directamente en la plataforma.
                     </p>
                     <div class="project-links">
-                        <span class="project-link tag-link"><i class="fas fa-bolt"></i> IA Agéntica · React</span>
+                        <a href="https://www.loom.com/share/b50832525f1241db9bf741414f042ebf" class="project-link video-link">
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -248,15 +256,15 @@
                     <img src="/imgs/automatizacion_usa.png" alt="Reportes Universitarios">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Automatización de Reportes Universitarios con API de Google Gemini + Make</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj3.title">Automatización de Reportes Universitarios con API de Google Gemini + Make</h3>
+                    <p class="project-description" data-i18n="proj3.desc">
                         Sistema automatizado para generación de reportes de seguimiento de micro diseño universitario
                         con análisis de datos y visualización automática.
                     </p>
                     <div class="project-links">
 
                         <a href="https://www.loom.com/share/6a8a95687b794471a24b263b938feb08?sid=7b69bcd2-e8c8-4feb-bf8b-5a5f0e50f73b" class="project-link video-link">
-                            <i class="fas fa-video"></i> Video Demo
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
                         </a>
 
                     </div>
@@ -268,17 +276,14 @@
                     <img src="/imgs/ai_agent_eleven.png" alt="Agente IA Servicio Cliente">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Agente IA Ultrarrealista con ElevenLabs + Voximplant + Make</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj4.title">Agente IA Ultrarrealista con ElevenLabs + Voximplant + Make</h3>
+                    <p class="project-description" data-i18n="proj4.desc">
                         Agente conversacional inteligente integrado con Voximplant e ElevenLabs para atención al cliente
                         automatizada y agendamiento de citas con procesamiento de voz natural.
                     </p>
                     <div class="project-links">
-                        <a href="https://llamadasconiapoenaielevenlabs.netlify.app/" class="project-link demo-link">
-                            <i class="fas fa-play"></i> Demo Interactiva
-                        </a>
                         <a href="https://www.loom.com/share/3a66c5b4dfc940d4b0a58e1c49f04bc1?sid=6a8d2efd-40dc-4dfe-adaa-6fc1566064b6" class="project-link video-link">
-                            <i class="fas fa-video"></i> Video Demo
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
                         </a>
 
                     </div>
@@ -292,15 +297,15 @@
                         alt="Automatización Instagram">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Automatización multicanal Instagram y Whatsapp con RPA Marketing</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj5.title">Automatización multicanal Instagram y Whatsapp con RPA Marketing</h3>
+                    <p class="project-description" data-i18n="proj5.desc">
                         Sistema de recolección automatizada de seguidores de Instagram y mensajería masiva utilizando
                         Playwright y gestión de sesiones con cookies.
                     </p>
                     <div class="project-links">
 
                         <a href="https://www.loom.com/share/b071959a19eb417e9315e8d0e823dc29?sid=0a9aff4a-4dd7-4bcb-b077-544f2fba7d5d" class="project-link video-link">
-                            <i class="fas fa-video"></i> Video Demo
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
                         </a>
 
                     </div>
@@ -314,15 +319,15 @@
                         alt="ChatBot WhatsApp">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">ChatBot WhatsApp Inteligente con API de OpenAI + Make</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj6.title">ChatBot WhatsApp Inteligente con API de OpenAI + Make</h3>
+                    <p class="project-description" data-i18n="proj6.desc">
                         Bot de WhatsApp integrado con MAKE y ChatGPT para atención al cliente, agendamiento,
                         reagendamiento y cancelación de citas de forma automatizada.
                     </p>
                     <div class="project-links">
 
                         <a href="https://www.loom.com/share/a78322ac583b492ab811f40a07f704a2?sid=6a5e3709-a4ff-429f-9461-c8e6501660ad" class="project-link video-link">
-                            <i class="fas fa-video"></i> Video Demo
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
                         </a>
 
                     </div>
@@ -335,17 +340,14 @@
                     <img src="/imgs/ai_agent_openAI.png" alt="Agente IA Recordatorios">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Agente IA con API de OpenAI + Voximplant + Make</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj7.title">Agente IA con API de OpenAI + Voximplant + Make</h3>
+                    <p class="project-description" data-i18n="proj7.desc">
                         Sistema automatizado con Voximplant y ChatGPT para recordatorios de pagos, gestión de
                         inscripciones y atención al cliente multicanal.
                     </p>
                     <div class="project-links">
-                        <a href="https://llamadasconiapoenaielevenlabs.netlify.app/" class="project-link demo-link">
-                            <i class="fas fa-play"></i> Demo Interactiva
-                        </a>
                         <a href="https://www.loom.com/share/1217eb5c04404da0b4a94f44adf23e96" class="project-link video-link">
-                            <i class="fas fa-video"></i> Video Demo
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
                         </a>
 
                     </div>
@@ -358,15 +360,15 @@
                     <img src="/imgs/telegram_agent.png" alt="Bot Telegram">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Bot Telegram con Buffer de Mensajes en Make</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="proj8.title">Bot Telegram con Buffer de Mensajes en Make</h3>
+                    <p class="project-description" data-i18n="proj8.desc">
                         Bot de Telegram optimizado con sistema de buffer de mensajes sin Redis, integrado con MAKE para
                         automatización de workflows complejos.
                     </p>
                     <div class="project-links">
 
                         <a href="https://www.loom.com/share/376c6516a85c41239a83b4ee1c1263cd?sid=b8e733fb-2890-4be8-9196-21c8359b0fa1" class="project-link video-link">
-                            <i class="fas fa-video"></i> Video Demo
+                            <i class="fas fa-video"></i> <span data-i18n="link.video">Video Demo</span>
                         </a>
 
                     </div>
@@ -378,9 +380,9 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
-        <span class="section-eyebrow" data-aos="fade-up">Conectemos</span>
-        <h2 data-aos="fade-up">Contacto</h2>
-        <p data-aos="fade-up" data-aos-delay="100">¿Listo para automatizar tu negocio con IA?</p>
+        <span class="section-eyebrow" data-aos="fade-up" data-i18n="contact.eyebrow">Conectemos</span>
+        <h2 data-aos="fade-up" data-i18n="contact.title">Contacto</h2>
+        <p data-aos="fade-up" data-aos-delay="100" data-i18n="contact.desc">¿Listo para automatizar tu negocio con IA?</p>
         <div class="contact-info">
             <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-envelope"></i>
@@ -389,14 +391,13 @@
             </div>
             <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-phone"></i>
-                <h3>Teléfono</h3>
-                <p>3028571257</p>
-                <p>3007859566</p>
+                <h3 data-i18n="contact.phone">Teléfono</h3>
+                <p>+57 3018923888</p>
             </div>
             <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
                 <i class="fab fa-whatsapp"></i>
                 <h3>WhatsApp</h3>
-                <a href="https://wa.me/+573007859566">3007859566</a>
+                <a href="https://wa.me/+573018923888">+57 3018923888</a>
             </div>
         </div>
         <div class="footer-note" data-aos="fade-up" data-aos-delay="500">

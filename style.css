@@ -120,6 +120,40 @@ a {
     width: 100%;
 }
 
+/* Language toggle */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.lang-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    color: var(--text);
+}
+
+.lang-btn.active {
+    background: var(--gradient);
+    color: #05070d;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -561,11 +595,6 @@ a {
     gap: 0.5rem;
 }
 
-.demo-link {
-    background: var(--gradient);
-    color: #05070d;
-}
-
 .video-link {
     background: linear-gradient(45deg, #ff6b6b, #ee5a24);
     color: white;
@@ -574,14 +603,6 @@ a {
 .short-link {
     background: linear-gradient(45deg, #a55eea, #8b5cf6);
     color: white;
-}
-
-.tag-link {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border);
-    color: var(--text-dim);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
 }
 
 .project-link:hover {
