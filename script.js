@@ -64,9 +64,9 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(0, 0, 0, 0.5)';
+        header.style.background = 'rgba(5, 7, 13, 0.92)';
     } else {
-        header.style.background = 'rgba(0, 0, 0, 0.9)';
+        header.style.background = 'rgba(5, 7, 13, 0.75)';
     }
 });
 
